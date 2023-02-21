@@ -1,0 +1,21 @@
+@import "../vendor/normalize.scss";
+@import "../vendor/fonts/fonts.css";
+
+@import "../blocks/page/page.scss";
+@import "../blocks/h1-title/h1-title.scss";
+@import "../blocks/button/button.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/header/__content/header__content.scss";
+@import "../blocks/header/__link/header__link.scss";
+@import "../blocks/header/__logo/header__logo.scss";
+@import "../blocks/header/__menu/header__menu.scss";
+@import "../blocks/header/__menu-link/header__menu-link.scss";
+@import "../blocks/header/__menu-item/header__menu-item.scss";
+
+@import "../blocks/first-block/first-block.scss";
+@import "../blocks/first-block/__content/first-block__content.scss";
+@import "../blocks/first-block/__text-wrapper/first-block__text-wrapper.scss";
+@import "../blocks/first-block/__subtitle/first-block__subtitle.scss";
+@import "../blocks/first-block/__list/first-block__list.scss";
+@import "../blocks/first-block/__list-item/first-block__list-item.scss";
+@import "../blocks/first-block/__buttons-wrapper/first-block__buttons-wrapper.scss";

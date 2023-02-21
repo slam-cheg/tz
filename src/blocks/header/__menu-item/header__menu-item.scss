@@ -1,0 +1,15 @@
+.header__menu-item {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	transition: 0.3s;
+
+	&:hover {
+		transition: 0.3s;
+		color: #43abf0;
+	}
+}
