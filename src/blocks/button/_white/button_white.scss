@@ -1,0 +1,15 @@
+.button_white {
+	border: 1px solid #6f6d7b;
+	background: #fff;
+	color: #2a2b30;
+
+	&:hover {
+		transition: 0.3s;
+		background: #6f6d7b;
+		color: #fff;
+
+		.button__ico {
+			filter: invert(1);
+		}
+	}
+}

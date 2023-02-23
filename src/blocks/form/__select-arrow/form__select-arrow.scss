@@ -1,0 +1,9 @@
+.form__select-arrow {
+	background: url("../images/select-arrow.svg") no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    transition: .3s;
+    transform: rotate(180deg);
+}

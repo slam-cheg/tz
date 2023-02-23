@@ -1,9 +1,19 @@
+html {
+    scroll-behavior: smooth
+}
+
 @import "../vendor/normalize.scss";
 @import "../vendor/fonts/fonts.css";
 
 @import "../blocks/page/page.scss";
 @import "../blocks/h1-title/h1-title.scss";
+@import "../blocks/h2-title/h2-title.scss";
 @import "../blocks/button/button.scss";
+@import "../blocks/button/__text/button__text.scss";
+@import "../blocks/button/_white/button_white.scss";
+@import "../blocks/button/_form/button_form.scss";
+@import "../blocks/button/__ico/button__ico.scss";
+
 @import "../blocks/header/header.scss";
 @import "../blocks/header/__content/header__content.scss";
 @import "../blocks/header/__link/header__link.scss";
@@ -14,8 +24,47 @@
 
 @import "../blocks/first-block/first-block.scss";
 @import "../blocks/first-block/__content/first-block__content.scss";
+@import "../blocks/first-block/__content-wrapper/first-block__content-wrapper.scss";
 @import "../blocks/first-block/__text-wrapper/first-block__text-wrapper.scss";
 @import "../blocks/first-block/__subtitle/first-block__subtitle.scss";
 @import "../blocks/first-block/__list/first-block__list.scss";
 @import "../blocks/first-block/__list-item/first-block__list-item.scss";
 @import "../blocks/first-block/__buttons-wrapper/first-block__buttons-wrapper.scss";
+
+@import "../blocks/order/order.scss";
+@import "../blocks/order/__content/order__content.scss";
+@import "../blocks/order/__header/order__header.scss";
+@import "../blocks/order/__description/order__description.scss";
+@import "../blocks/order/__icons/order__icons.scss";
+@import "../blocks/order/__icon-wrapper/order__icon-wrapper.scss";
+@import "../blocks/order/__icon-img/order__icon-img.scss";
+@import "../blocks/order/__icon-description/order__icon-description.scss";
+@import "../blocks/order/__scheme/order__scheme.scss";
+@import "../blocks/order/__dots/order__dots.scss";
+@import "../blocks/order/__dots-group/order__dots-group.scss";
+@import "../blocks/order/__dot/order__dot.scss";
+
+@import "../blocks/form/form.scss";
+@import "../blocks/form/__select/form__select.scss";
+@import "../blocks/form/__select/_open/form__select_open.scss";
+@import "../blocks/form/__select-arrow/form__select-arrow.scss";
+@import "../blocks/form/__select-list/form__select-list.scss";
+@import "../blocks/form/__select-item/form__select-item.scss";
+@import "../blocks/form/__input-wrapper/form__input-wrapper.scss";
+@import "../blocks/form/__input-wrapper/_two-columns/form__input-wrapper_two-columns.scss";
+@import "../blocks/form/__input-header/form__input-header.scss";
+@import "../blocks/form/__label/form__label.scss";
+@import "../blocks/form/__label/_hidden/form__label_hidden.scss";
+@import "../blocks/form/__input/form__input.scss";
+@import "../blocks/form/__input-percent/form__input-percent.scss";
+@import "../blocks/form/__file/form__file.scss";
+@import "../blocks/form/__file/_uploaded/form__file_uploaded.scss";
+
+@import "../blocks/footer/footer.scss";
+@import "../blocks/footer/__wrapper/footer__wrapper.scss";
+@import "../blocks/footer/__separator/footer__separator.scss";
+@import "../blocks/footer/__content/footer__content.scss";
+@import "../blocks/footer/__element/footer__element.scss";
+@import "../blocks/footer/__copyright/footer__copyright.scss";
+@import "../blocks/footer/__element-title/footer__element-title.scss";
+@import "../blocks/footer/__element-title/_grey/footer__element-title_grey.scss";

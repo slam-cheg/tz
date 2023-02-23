@@ -6,8 +6,19 @@
 	line-height: 16px;
 	text-transform: uppercase;
 	color: #ffffff;
-	padding: 15px 60px;
+	padding: 15px;
 	border: 1px solid #fff;
 	background: #3e9cdc;
 	border-radius: 4px;
+	transition: 0.3s;
+	width: 183px;
+	text-align: center;
+    text-decoration: none;
+
+	&:hover {
+		cursor: pointer;
+		transition: 0.3s;
+		background: #fff;
+		color: #000;
+	}
 }

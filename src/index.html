@@ -16,28 +16,166 @@
 					<li class="header__menu-item"><a href="#" class="header__menu-link">Бизнес</a></li>
 					<li class="header__menu-item"><a href="#" class="header__menu-link">О нас</a></li>
 					<li class="header__menu-item"><a href="#" class="header__menu-link">Цены</a></li>
-					<li class="header__menu-item"><a href="#" class="header__menu-link">Оформить заказ</a></li>
+					<li class="header__menu-item"><a href="#order" class="header__menu-link">Оформить заказ</a></li>
 				</ul>
 			</div>
 		</header>
 		<main class="main">
 			<section class="first-block">
 				<div class="first-block__content">
-					<h1 class="h1-title"><span>Lorem ipsum</span> dolor&nbsp;sit amet consectetur <span>adipiscing</span></h1>
-					<div class="first-block__text-wrapper">
-						<p class="first-block__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
-						<ul class="first-block__list">
-							<li class="first-block__list-item">Totam rem aperiam eaque ipsa</li>
-							<li class="first-block__list-item">Sit voluptatem accusantium doloremque laudantium</li>
-							<li class="first-block__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
-						</ul>
-					</div>
-					<div class="first-block__buttons-wrapper">
-						<button class="button">заказать</button>
-						<button class="button">подробнее</button>
+					<div class="first-block__content-wrapper">
+						<h1 class="h1-title"><span>Lorem ipsum</span> dolor&nbsp;sit amet consectetur <span>adipiscing</span></h1>
+						<div class="first-block__text-wrapper">
+							<p class="first-block__subtitle">At&nbsp;vero eos et&nbsp;accusamus et&nbsp;iusto odio dignissimos ducimus!</p>
+							<ul class="first-block__list">
+								<li class="first-block__list-item">Totam rem aperiam eaque ipsa</li>
+								<li class="first-block__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+								<li class="first-block__list-item">Sed ut&nbsp;perspiciatis, unde omnis iste natus error</li>
+							</ul>
+						</div>
+						<div class="first-block__buttons-wrapper">
+							<a class="button" aria-label="Заказать" href="#order">заказать</a>
+							<button class="button button_white" type="button" aria-label="Подробнее">подробнее</button>
+						</div>
 					</div>
 				</div>
 			</section>
+			<section class="order" id="order">
+				<div class="order__content">
+					<div class="order__header">
+						<h2 class="h2-title">Оформление <span>заказа</span></h2>
+						<p class="order__description">Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!</p>
+					</div>
+					<div class="order__scheme">
+						<div class="order__icons">
+							<div class="order__icon-wrapper">
+								<img src="<%=require('./images/ico-1.svg')%>" alt="Lorem ipsum dolor sit amet" class="order__icon-img" />
+								<p class="order__icon-description">Lorem ipsum dolor sit amet</p>
+							</div>
+							<div class="order__icon-wrapper">
+								<img src="<%=require('./images/ico-2.svg')%>" alt="Сonsecteturadipiscing elit" class="order__icon-img" />
+								<p class="order__icon-description">Сonsecteturadipiscing elit</p>
+							</div>
+							<div class="order__icon-wrapper">
+								<img src="<%=require('./images/ico-3.svg')%>" alt="Sed do eiusmod tempor" class="order__icon-img" />
+								<p class="order__icon-description">Sed do eiusmod tempor</p>
+							</div>
+							<div class="order__icon-wrapper">
+								<img src="<%=require('./images/ico-4.svg')%>" alt="Esse cillum dolore eu fugiat" class="order__icon-img" />
+								<p class="order__icon-description">Esse cillum dolore eu fugiat</p>
+							</div>
+							<div class="order__icon-wrapper">
+								<img src="<%=require('./images/ico-5.svg')%>" alt="Excepteur sint occaecat cupidatat non proident" class="order__icon-img" />
+								<p class="order__icon-description">Excepteur sint occaecat cupidatat non proident</p>
+							</div>
+						</div>
+						<div class="order__dots">
+							<div class="order__dots-group">
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+							</div>
+							<div class="order__dots-group">
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+							</div>
+							<div class="order__dots-group">
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+							</div>
+							<div class="order__dots-group">
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+								<div class="order__dot"></div>
+							</div>
+						</div>
+					</div>
+					<form class="form">
+						<div class="form__input-wrapper form__select">
+							<input class="form__input" placeholder="Выберите тип системы" type="text" list="form-list" id="select" />
+							<div class="form__select-arrow"></div>
+							<datalist class="form__select-list" id="form-list">
+								<option class="form__select-item">Sed ut perspiciatis</option>
+								<option class="form__select-item">Nemo enim ipsam</option>
+								<option class="form__select-item">Et harum quidem</option>
+								<option class="form__select-item">Temporibus autem</option>
+								<option class="form__select-item">Itaque earum rerum</option>
+								<option class="form__select-item">Sed ut perspiciatis</option>
+								<option class="form__select-item">Nemo enim ipsam</option>
+								<option class="form__select-item">Et harum quidem</option>
+								<option class="form__select-item">Temporibus autem</option>
+								<option class="form__select-item">Itaque earum rerum</option>
+							</datalist>
+						</div>
+						<div class="form__input-wrapper">
+							<input type="email" placeholder="Ваш e-mail" name="email" id="email" class="form__input" />
+						</div>
+						<div class="form__input-wrapper">
+							<input type="text" placeholder="Ваше имя" name="name" id="name" class="form__input" />
+						</div>
+						<div class="form__input-wrapper form__input-wrapper_two-columns">
+							<div class="form__input-header">
+								<label for="slider" class="form__label">Sed ut&nbsp;perspiciatis, unde omnis iste natus</label>
+								<span class="form__input-percent">50%</span>
+							</div>
+							<input type="range" name="slider" id="slider" class="form__input" />
+						</div>
+						<div class="form__input-wrapper form__file">
+							<label class="button button_white button_form">
+								<input type="file" name="file" class="form__input" />
+								<div class="button__ico"></div>
+								<span class="button__text">Прикрепить файл</span>
+							</label>
+						</div>
+						<div class="form__input-wrapper">&nbsp;</div>
+						<div class="form__input-wrapper">
+							<input class="button button_form" id="submit-button" type="button" value="Заказать" aria-label="Заказать" />
+						</div>
+						<div class="form__input-wrapper">&nbsp;</div>
+					</form>
+				</div>
+			</section>
 		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<span class="footer__copyright">&copy;&nbsp;2018 &laquo;LoremIpsum.net&raquo; Все права защищены.</span>
+				<div class="footer__separator"></div>
+				<div class="footer__content">
+					<div class="footer__element">
+						<img src="<%=require('./images/qiwi.svg')%>" alt="Qiwi" class="footer__element-ico" />
+						<span class="footer__element-title footer__element-title_grey">Qiwi wallet</span>
+					</div>
+					<div class="footer__element">
+						<img src="<%=require('./images/ym.svg')%>" alt="Yandex Money" class="footer__element-ico" />
+						<span class="footer__element-title footer__element-title_grey">Yandex Money</span>
+					</div>
+					<div class="footer__element">
+						<img src="<%=require('./images/wm.svg')%>" alt="Web Money" class="footer__element-ico" />
+						<span class="footer__element-title footer__element-title_grey">Web Money</span>
+					</div>
+				</div>
+				<div class="footer__separator"></div>
+				<div class="footer__content">
+					<a target="_blank" href="mailto:info@ipsum228.com" class="footer__element">
+						<img src="<%=require('./images/email.svg')%>" alt="email" class="footer__element-ico" />
+						<span class="footer__element-title">info@ipsum228.com</span>
+					</a>
+					<a target="_blank" href="vk.com" class="footer__element">
+						<img src="<%=require('./images/vk.svg')%>" alt="Web Money" class="footer__element-ico" />
+						<span class="footer__element-title">Web Money</span>
+					</a>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

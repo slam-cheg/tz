@@ -1,0 +1,19 @@
+.form__select-item {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 34px;
+	color: #fff;
+	transition: 0.3s;
+
+	&:hover {
+		transition: 0.3s;
+		color: #42a9ed;
+        cursor: pointer;
+	}
+
+	&::-webkit-calendar-picker-indicator {
+		display: none;
+	}
+}

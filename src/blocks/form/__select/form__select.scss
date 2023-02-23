@@ -1,0 +1,15 @@
+.form__select {
+	.form__input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		text-indent: 1px;
+		text-overflow: "";
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+
+	.form__select-arrow {
+		filter: invert(1);
+	}
+}

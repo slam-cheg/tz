@@ -1,0 +1,7 @@
+.form__input-wrapper {
+    width: calc(100% / 3 - 20px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+}
