@@ -1,4 +1,9 @@
 .footer__content {
 	display: flex;
 	gap: 38px;
+
+	@media screen and (max-width: 769px) {
+		gap: 10px;
+		flex-direction: column;
+	}
 }

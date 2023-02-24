@@ -1,4 +1,8 @@
 .first-block__buttons-wrapper {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width:769px) {
+        gap: 10px;
+    }
 }

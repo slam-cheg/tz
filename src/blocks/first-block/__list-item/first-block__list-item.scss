@@ -4,17 +4,27 @@
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
-    margin: 0;
-    position: relative;
-    display: flex;
-    align-items: center;
+	margin: 0;
+	position: relative;
+	display: flex;
+	align-items: center;
 
-    &::before {
-        content: "";
-        width: 5px;
-        height: 1.5px;
-        position: absolute;
-        background: #000;
-        left: -12px;
-    }
+	&::before {
+		content: "";
+		width: 5px;
+		height: 1.5px;
+		position: absolute;
+		background: #000;
+		left: -12px;
+
+        @media screen and (max-width: 769px) {
+            height: 1px;
+        }
+	}
+
+	@media screen and (max-width: 769px) {
+		font-size: 14px;
+		line-height: 1.2;
+        
+	}
 }

@@ -3,4 +3,15 @@
 	width: 1169px;
 	justify-content: space-between;
 	align-items: flex-end;
+
+	@media screen and (max-width: 1249px) {
+		width: calc(100% - 40px);
+	}
+
+	@media screen and (max-width: 769px) {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 10px;
+		padding: 15px 0;
+	}
 }

@@ -4,4 +4,10 @@
 	gap: 60px;
 	margin: 0;
 	padding: 0;
+
+	@media screen and (max-width: 769px) {
+		width: 100%;
+		justify-content: space-between;
+		gap: unset;
+	}
 }

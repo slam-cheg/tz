@@ -10,4 +10,12 @@
 	background: #10101de5;
 	opacity: 0.9;
 	z-index: 100;
+
+	@media screen and (max-width: 969px) {
+		height: 60px;
+	}
+	
+	@media screen and (max-width: 769px) {
+		height: auto;
+	}
 }

@@ -13,9 +13,18 @@
 	line-height: 22px;
 	color: #272733;
 
+	@media screen and (max-width: 969px) {
+		font-size: 14px;
+		line-height: 1;
+	}
+
 	&::placeholder {
 		color: #272733;
 		opacity: 1;
+	}
+
+	&#select {
+		pointer-events: none;
 	}
 
 	&[type="range"] {
@@ -47,5 +56,10 @@
 		top: 0;
 		cursor: pointer;
 		z-index: 9;
+	}
+
+	&::-webkit-calendar-picker-indicator {
+		display: none;
+		opacity: 0;
 	}
 }

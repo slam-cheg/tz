@@ -2,15 +2,18 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 import "./index.css";
 
-const select = document.querySelector(".form__select");
+const form = document.querySelector(".form");
+const emailInput = form.querySelector("#email");
+const nameInput = form.querySelector("#name");
+const select = form.querySelector(".form__select");
 const selectInput = select.querySelector(".form__input");
 const selectItems = select.querySelectorAll(".form__select-item");
-const selectLabel = select.querySelector(".form__label");
-const rangeSlider = document.querySelector("#slider");
-const rangeSliderPercents = document.querySelector(".form__input-percent");
-const fileButton = document.querySelector(".form__file");
+const rangeSlider = form.querySelector("#slider");
+const rangeSliderPercents = form.querySelector(".form__input-percent");
+const fileButton = form.querySelector(".form__file");
 const fileButtonText = fileButton.querySelector(".button__text");
 const fileInput = fileButton.querySelector(".form__input");
+const submitButton = form.querySelector("#submit-button");
 
 select.addEventListener("mouseover", () => {
 	openSelectList();
@@ -29,6 +32,7 @@ rangeSlider.addEventListener("input", changePercentBySlider);
 fileButton.addEventListener("change", uploadFile);
 fileButton.addEventListener("mouseover", activateHoverInfo);
 fileButton.addEventListener("mouseout", uploadFile);
+form.addEventListener("submit", fakeSubmitForm);
 
 function openSelectList() {
 	select.classList.add("form__select_open");
@@ -39,7 +43,6 @@ function closeSelectList() {
 }
 
 function chooseSelectItem(item) {
-	debugger;
 	selectInput.value = item.value;
 	closeSelectList();
 }
@@ -59,4 +62,17 @@ function activateHoverInfo() {
 	if (fileInput.files[0]) {
 		fileButtonText.textContent = "Выбрать другой файл";
 	}
+}
+
+function fakeSubmitForm(evt) {
+	evt.preventDefault();
+	const submitData = {
+		System: selectInput.value,
+		Email: emailInput.value,
+		Name: nameInput.value,
+		Slider: `${rangeSlider.value}%`,
+		File: fileInput.files[0],
+	};
+
+	console.log(submitData);
 }

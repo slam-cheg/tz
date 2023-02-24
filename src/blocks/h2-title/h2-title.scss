@@ -11,4 +11,10 @@
 	span {
 		color: #3e9cdc;
 	}
+
+	@media screen and (max-width: 769px) {
+		font-size: 22px;
+		line-height: 1;
+		margin: 0 0 10px 0;
+	}
 }

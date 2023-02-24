@@ -1,3 +1,7 @@
 .order__content {
     width: 1169px;
+
+    @media screen and (max-width: 1249px) {
+        width: calc(100% - 40px);
+	}
 }

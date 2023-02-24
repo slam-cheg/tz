@@ -1,10 +1,11 @@
 .form__select {
+	cursor: pointer;
+
 	.form__input {
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		text-indent: 1px;
 		text-overflow: "";
-		cursor: pointer;
 		display: flex;
 		align-items: center;
 	}

@@ -1,3 +1,11 @@
 .first-block__content-wrapper {
 	max-width: 780px;
+
+	@media screen and (max-width: 969px) {
+		max-width: 80%;
+	}
+
+	@media screen and (max-width: 479px) {
+		max-width: 100%;
+	}
 }

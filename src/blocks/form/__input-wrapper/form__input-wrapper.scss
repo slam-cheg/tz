@@ -1,7 +1,11 @@
 .form__input-wrapper {
-    width: calc(100% / 3 - 20px);
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: fit-content;
+	width: calc(100% / 3 - 20px);
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: fit-content;
+
+	@media screen and (max-width: 769px) {
+		width: 100%;
+	}
 }

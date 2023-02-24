@@ -17,7 +17,7 @@
 	box-sizing: border-box;
 	border: 1px solid #3d4050;
 	border-radius: 0 0 3px 3px;
-    transition: .5s;
+	transition: 0.5s;
 	gap: 10px;
 
 	&::-webkit-scrollbar {
@@ -38,6 +38,10 @@
 	}
 
 	&::-webkit-scrollbar-button {
+		display: none;
+	}
+
+	&::-webkit-calendar-picker-indicator {
 		display: none;
 	}
 }

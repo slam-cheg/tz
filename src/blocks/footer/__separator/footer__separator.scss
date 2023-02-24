@@ -2,4 +2,9 @@
 	background: #c3c3c3;
 	width: 1px;
 	height: 18px;
+
+	@media screen and (max-width: 769px) {
+		height: 1px;
+		width: 100%;
+	}
 }

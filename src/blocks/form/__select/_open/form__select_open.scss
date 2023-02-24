@@ -3,23 +3,25 @@
 		visibility: visible;
 		opacity: 1;
 		pointer-events: auto;
-        transition: .5s;
+		transition: 0.5s;
 	}
 	.form__input {
 		background: rgba(61, 64, 80, 0.85);
 		border-radius: 3px 3px 0px 0px;
-        border: 1px solid transparent;
+		border: 1px solid transparent;
+		color: #fff;
 
 		&::placeholder {
 			color: #fff;
+			opacity: 1;
 		}
 	}
 	.form__label {
 		color: #fff;
 	}
 
-    .form__select-arrow {
-        filter: none;
-        transform: rotate(0deg);
-    }
+	.form__select-arrow {
+		filter: none;
+		transform: rotate(0deg);
+	}
 }

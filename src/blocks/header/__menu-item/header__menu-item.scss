@@ -12,4 +12,8 @@
 		transition: 0.3s;
 		color: #43abf0;
 	}
+
+	@media screen and (max-width: 769px) {
+		font-size: 10px;
+	}
 }

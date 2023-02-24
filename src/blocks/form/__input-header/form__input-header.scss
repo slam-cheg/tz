@@ -3,10 +3,16 @@
 	justify-content: space-between;
 
 	.form__label {
-        left: 0;
+		left: 0;
 		position: relative;
 		font-size: 18px;
 		line-height: 22px;
 		color: #ffffff;
+
+		@media screen and (max-width: 769px) {
+			max-width: 70%;
+			font-size: 14px;
+			line-height: 1.2;
+		}
 	}
 }

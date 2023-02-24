@@ -3,4 +3,9 @@
 	height: 80px;
 	display: flex;
 	justify-content: center;
+
+	@media screen and (max-width: 769px) {
+		height: auto;
+		padding: 20px 0;
+	}
 }

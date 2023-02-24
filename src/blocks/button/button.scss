@@ -14,11 +14,23 @@
 	width: 183px;
 	text-align: center;
     text-decoration: none;
+	box-sizing: border-box;
 
 	&:hover {
 		cursor: pointer;
 		transition: 0.3s;
 		background: #fff;
 		color: #000;
+	}
+
+	@media screen and (max-width: 769px) {
+		width: auto;
+		font-size: 12px;
+		line-height: 1;
+		padding: 10px;
+	}
+	
+	@media screen and (max-width: 479px) {
+		width: 100%;
 	}
 }

@@ -5,5 +5,11 @@
 	font-size: 18px;
 	line-height: 22px;
 	color: #bbbbbb;
-    margin: 0;
+	margin: 0;
+
+	@media screen and (max-width: 769px) {
+		font-size: 14px;
+		line-height: 1;
+		text-align: center;
+	}
 }

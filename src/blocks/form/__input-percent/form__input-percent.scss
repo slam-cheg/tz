@@ -6,4 +6,9 @@
 	line-height: 22px;
 	text-align: right;
 	color: rgba(255, 255, 255, 0.85);
+
+	@media screen and (max-width: 769px) {
+		font-size: 14px;
+		line-height: 1.2;
+	}
 }

@@ -1,3 +1,7 @@
 .first-block__text-wrapper {
-    margin: 0 0 80px 0;
+	margin: 0 0 80px 0;
+
+	@media screen and (max-width: 769px) {
+		margin: 0 0 40px 0;
+	}
 }
