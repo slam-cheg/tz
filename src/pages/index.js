@@ -30,8 +30,6 @@ selectItems.forEach((item) => {
 
 rangeSlider.addEventListener("input", changePercentBySlider);
 fileButton.addEventListener("change", uploadFile);
-fileButton.addEventListener("mouseover", activateHoverInfo);
-fileButton.addEventListener("mouseout", uploadFile);
 form.addEventListener("submit", fakeSubmitForm);
 
 function openSelectList() {
@@ -55,6 +53,11 @@ function uploadFile() {
 	if (fileInput.files[0]) {
 		fileButtonText.textContent = fileInput.files[0].name;
 		fileButton.classList.add("form__file_uploaded");
+
+		if (window.innerWidth > 1200) {
+			fileButton.addEventListener("mouseover", activateHoverInfo);
+			fileButton.addEventListener("mouseout", uploadFile);
+		}
 	}
 }
 
