@@ -1,0 +1,16 @@
+.features__content {
+    width: 1169px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 75px;
+
+    @media screen and (max-width: 1249px) {
+        width: calc(100% - 40px);
+	}
+
+    @media screen and (max-width: 769px) {
+        row-gap: 35px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

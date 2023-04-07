@@ -1,33 +1,29 @@
 .button {
-	font-family: "Lato";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 16px;
-	text-transform: uppercase;
-	color: #ffffff;
-	padding: 15px;
-	border: 1px solid #fff;
-	background: #3e9cdc;
-	border-radius: 4px;
-	transition: 0.3s;
-	width: 183px;
-	text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 18px 50px;
+    background: #e84545;
+    border-radius: 4px;
+    transition: 0.3s;
     text-decoration: none;
-	box-sizing: border-box;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
 
 	&:hover {
 		cursor: pointer;
 		transition: 0.3s;
-		background: #fff;
-		color: #000;
+		background: #b34444;
 	}
 
 	@media screen and (max-width: 769px) {
 		width: auto;
 		font-size: 12px;
 		line-height: 1;
-		padding: 10px;
 	}
 	
 	@media screen and (max-width: 479px) {

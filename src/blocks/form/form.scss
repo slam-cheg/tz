@@ -1,9 +1,0 @@
-.form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
-    @media screen and (max-width: 769px) {
-        gap: 20px;
-    }
-}

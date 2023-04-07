@@ -1,0 +1,10 @@
+.features__ico {
+	margin: 0 0 45px 0;
+
+	@media screen and (max-width: 769px) {
+		width: 80px;
+		max-height: 65px;
+		object-fit: contain;
+		margin: 0 0 25px 0;
+	}
+}

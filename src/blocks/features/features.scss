@@ -1,0 +1,9 @@
+.features {
+	display: flex;
+    justify-content: center;
+    padding: 156px 0 156px;
+
+    @media screen and (max-width: 769px) {
+        padding: 100px 0;
+    }
+}

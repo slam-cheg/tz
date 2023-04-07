@@ -1,12 +1,20 @@
 .first-block__content {
 	width: 1169px;
-	padding: 200px 0 0 0;
+	padding: 256px 0 156px;
+	display: flex;
+    justify-content: center;
 
 	@media screen and (max-width: 1249px) {
 		width: calc(100% - 40px);
 	}
 
-	@media screen and (max-width: 969px) {
-		padding: 20vh 0;
+	@media screen and (max-width: 769px) {
+		padding: 0;
+		height: 80%;
+		align-items: center;
+	}
+
+	@media screen and (max-width: 359px) {
+		margin: 10vh 0 0 0;
 	}
 }

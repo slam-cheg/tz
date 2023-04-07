@@ -1,7 +1,6 @@
 .header__menu-item {
-	font-family: "Lato";
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 13px;
 	line-height: 16px;
 	text-transform: uppercase;
@@ -10,10 +9,15 @@
 
 	&:hover {
 		transition: 0.3s;
-		color: #43abf0;
+		color: #e84545;
 	}
 
 	@media screen and (max-width: 769px) {
 		font-size: 10px;
+	}
+
+	@media screen and (max-width: 359px) {
+		margin: 2.5px 20px;
+		text-align: center;
 	}
 }
