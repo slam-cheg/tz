@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'Open Sans';
     src:
     url(1edf55e3664527db7bd9.woff2) format("woff2"), 
     url(550e84b7476db14f7256.woff) format("woff");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'Open Sans';
     src: 
     url(0c87441a1b4ab4b4e8be.woff2) format("woff2"),
     url(4aa2ff3ccfc82998c0fb.woff) format("woff");
@@ -198,21 +198,24 @@ template {
   display: none;
 }
 
+.main {
+  background: #2b2e4a;
+}
+
 .page {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
 }
 
 .h1-title {
-  font-style: normal;
   font-weight: 800;
   font-size: 65px;
   line-height: 1.1;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   margin: 0 0 40px 0;
 }
 @media screen and (max-width: 769px) {
@@ -224,7 +227,6 @@ template {
 }
 
 .button {
-  font-style: normal;
   font-weight: 800;
   font-size: 13px;
   line-height: 21px;
@@ -282,7 +284,7 @@ template {
 
 .header__content {
   display: flex;
-  width: 1169px;
+  width: 1170px;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -300,26 +302,26 @@ template {
   }
 }
 
-.header__link {
+.logo {
   display: flex;
   justify-content: center;
 }
 
-.header__logo {
+.logo__img {
   width: 100%;
   transition: 0.3s;
 }
-.header__logo:hover {
+.logo__img:hover {
   opacity: 0.7;
   transition: 0.3s;
 }
 @media screen and (max-width: 769px) {
-  .header__logo {
+  .logo__img {
     width: 70%;
   }
 }
 
-.header__menu {
+.menu {
   display: flex;
   list-style: none;
   gap: 60px;
@@ -327,55 +329,54 @@ template {
   padding: 0;
 }
 @media screen and (max-width: 969px) {
-  .header__menu {
+  .menu {
     gap: 20px;
   }
 }
 @media screen and (max-width: 769px) {
-  .header__menu {
+  .menu {
     width: 100%;
     justify-content: space-between;
     gap: unset;
   }
 }
 @media screen and (max-width: 359px) {
-  .header__menu {
+  .menu {
     flex-wrap: wrap;
     width: 100vw;
   }
 }
 
-.header__menu-link {
-  text-decoration: none;
-  color: unset;
-}
-
-.header__menu-item {
-  font-style: normal;
+.menu__item {
   font-weight: 800;
   font-size: 13px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   transition: 0.3s;
 }
-.header__menu-item:hover {
+.menu__item:hover {
   transition: 0.3s;
   color: #e84545;
 }
 @media screen and (max-width: 769px) {
-  .header__menu-item {
+  .menu__item {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 359px) {
-  .header__menu-item {
+  .menu__item {
     margin: 2.5px 20px;
     text-align: center;
   }
 }
 
-.first-block {
+.menu__link {
+  text-decoration: none;
+  color: unset;
+}
+
+.banner {
   background: url(cb77791bd101783e009f.jpg);
   background-position: top center;
   background-size: cover;
@@ -384,79 +385,77 @@ template {
   justify-content: center;
 }
 @media screen and (max-width: 969px) {
-  .first-block {
+  .banner {
     height: auto;
     background-position: -100px;
   }
 }
 @media screen and (max-width: 769px) {
-  .first-block {
+  .banner {
     height: 100vh;
     align-items: center;
   }
 }
 
-.first-block__content {
-  width: 1169px;
+.banner__content {
+  width: 1170px;
   padding: 256px 0 156px;
   display: flex;
   justify-content: center;
 }
 @media screen and (max-width: 1249px) {
-  .first-block__content {
+  .banner__content {
     width: calc(100% - 40px);
   }
 }
 @media screen and (max-width: 769px) {
-  .first-block__content {
+  .banner__content {
     padding: 0;
     height: 80%;
     align-items: center;
   }
 }
 @media screen and (max-width: 359px) {
-  .first-block__content {
+  .banner__content {
     margin: 10vh 0 0 0;
   }
 }
 
-.first-block__content-wrapper {
+.banner__wrapper {
   max-width: 780px;
 }
 @media screen and (max-width: 969px) {
-  .first-block__content-wrapper {
+  .banner__wrapper {
     max-width: 80%;
   }
 }
 @media screen and (max-width: 479px) {
-  .first-block__content-wrapper {
+  .banner__wrapper {
     max-width: 100%;
   }
 }
 
-.first-block__subtitle {
-  font-family: "OpenSans";
-  font-style: normal;
+.banner__subtitle {
   font-weight: 400;
   font-size: 22px;
   line-height: 33px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   margin: 0 0 80px 0;
 }
 @media screen and (max-width: 769px) {
-  .first-block__subtitle {
+  .banner__subtitle {
     font-size: 16px;
     line-height: 1.2;
   }
 }
 
-.first-block__buttons-wrapper {
+.banner__buttons-wrapper {
   display: flex;
   justify-content: center;
 }
 @media screen and (max-width: 769px) {
-  .first-block__buttons-wrapper {
+  .banner__buttons-wrapper {
     gap: 10px;
   }
 }
@@ -465,6 +464,7 @@ template {
   display: flex;
   justify-content: center;
   padding: 156px 0 156px;
+  background: #ffffff;
 }
 @media screen and (max-width: 769px) {
   .features {
@@ -473,7 +473,7 @@ template {
 }
 
 .features__content {
-  width: 1169px;
+  width: 1170px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -511,7 +511,7 @@ template {
   }
 }
 
-.features__element-title {
+.features__title {
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
@@ -519,13 +519,12 @@ template {
   text-align: center;
 }
 @media screen and (max-width: 769px) {
-  .features__element-title {
+  .features__title {
     margin: 0 0 20px 0;
   }
 }
 
-.features__element-description {
-  font-style: normal;
+.features__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -533,7 +532,7 @@ template {
   margin: 0;
 }
 @media screen and (max-width: 769px) {
-  .features__element-description {
+  .features__description {
     font-size: 12px;
     line-height: 1;
   }
@@ -541,6 +540,7 @@ template {
 
 .works {
   width: 100%;
+  background: #ffffff;
 }
 
 .works__content {
@@ -596,16 +596,16 @@ template {
   }
 }
 
-.works__element-title {
+.works__title {
   font-size: 14px;
   font-weight: 800;
-  color: #fff;
+  color: #ffffff;
   margin: 0 0 10px 0;
 }
 
-.works__element-subtitle {
+.works__subtitle {
   font-size: 14px;
   font-weight: 400;
   margin: 0;
-  color: #fff;
+  color: #ffffff;
 }
