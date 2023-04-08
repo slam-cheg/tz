@@ -1,0 +1,22 @@
+.menu__item {
+	font-weight: 800;
+	font-size: 13px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: $white;
+	transition: 0.3s;
+
+	&:hover {
+		transition: 0.3s;
+		color: $light-red;
+	}
+
+	@media screen and (max-width: 769px) {
+		font-size: 10px;
+	}
+
+	@media screen and (max-width: 359px) {
+		margin: 2.5px 20px;
+		text-align: center;
+	}
+}

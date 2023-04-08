@@ -1,0 +1,13 @@
+.banner__subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: $white;
+    text-align: center;
+    margin: 0 0 80px 0;
+
+	@media screen and (max-width: 769px) {
+		font-size: 16px;
+		line-height: 1.2;
+	}
+}

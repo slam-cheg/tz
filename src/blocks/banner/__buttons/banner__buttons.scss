@@ -1,0 +1,8 @@
+.banner__buttons-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width:769px) {
+        gap: 10px;
+    }
+}

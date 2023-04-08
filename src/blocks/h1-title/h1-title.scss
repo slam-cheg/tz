@@ -1,11 +1,10 @@
 .h1-title {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 65px;
 	line-height: 1.1;
 	text-align: center;
 	text-transform: uppercase;
-	color: #fff;
+	color: $white;
 	margin: 0 0 40px 0;
 
 	@media screen and (max-width: 769px) {

@@ -9,27 +9,26 @@
 	<body class="page">
 		<header class="header">
 			<div class="header__content">
-				<a href="#" class="header__link">
-					<img src="<%=require('./images/ActiveBox.png')%>" alt="ActiveBox" class="header__logo" />
+				<a href="#" class="logo">
+					<img src="<%=require('./images/ActiveBox.png')%>" alt="ActiveBox logo" class="logo__img" />
 				</a>
-				<ul class="header__menu">
-					<li class="header__menu-item"><a href="#features" class="header__menu-link">features</a></li>
-					<li class="header__menu-item"><a href="#works" class="header__menu-link">works</a></li>
-					<li class="header__menu-item"><a href="#" class="header__menu-link">our team</a></li>
-					<li class="header__menu-item"><a href="#" class="header__menu-link">testimonials</a></li>
-					<li class="header__menu-item"><a href="#" class="header__menu-link">download</a></li>
+				<ul class="menu">
+					<li class="menu__item"><a href="#features" class="menu__link">features</a></li>
+					<li class="menu__item"><a href="#works" class="menu__link">works</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">our team</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">testimonials</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">download</a></li>
 				</ul>
 			</div>
 		</header>
 		<main class="main">
-			<section class="first-block">
-				<div class="first-block__content">
-					<div class="first-block__content-wrapper">
+			<section class="banner">
+				<div class="banner__content">
+					<div class="banner__wrapper">
 						<h1 class="h1-title">Your Favorite One Page Multi Purpose Template</h1>
-						<div class="first-block__text-wrapper">
-							<p class="first-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
-						</div>
-						<div class="first-block__buttons-wrapper">
+						<p class="banner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+						<div class="banner__buttons">
+							<!-- Будет ли это попап или якорная ссылка - данных нет, поэтому пока поставил как якорную ссылку. -->
 							<a class="button" aria-label="Find Out More" href="#">Find Out More</a>
 						</div>
 					</div>
@@ -39,33 +38,33 @@
 				<div class="features__content">
 					<div class="features__element">
 						<img src="<%=require('./images/feature-1.png')%>" alt="Easily Customised" class="features__ico" />
-						<p class="features__element-title">Easily Customised</p>
-						<p class="features__element-description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+						<h3 class="features__title">Easily Customised</h3>
+						<p class="features__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
 					</div>
 					<div class="features__element">
 						<img src="<%=require('./images/feature-2.png')%>" alt="Responsive Ready" class="features__ico" />
-						<p class="features__element-title">Responsive Ready</p>
-						<p class="features__element-description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+						<h3 class="features__title">Responsive Ready</h3>
+						<p class="features__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
 					</div>
 					<div class="features__element">
 						<img src="<%=require('./images/feature-3.png')%>" alt="Modern Design" class="features__ico" />
-						<p class="features__element-title">Modern Design</p>
-						<p class="features__element-description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+						<h3 class="features__title">Modern Design</h3>
+						<p class="features__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
 					</div>
 					<div class="features__element">
 						<img src="<%=require('./images/feature-4.png')%>" alt="Clean Code" class="features__ico" />
-						<p class="features__element-title">Clean Code</p>
-						<p class="features__element-description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+						<h3 class="features__title">Clean Code</h3>
+						<p class="features__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
 					</div>
 					<div class="features__element">
 						<img src="<%=require('./images/feature-5.png')%>" alt="Ready to Ship" class="features__ico" />
-						<p class="features__element-title">Ready to Ship</p>
-						<p class="features__element-description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+						<h3 class="features__title">Ready to Ship</h3>
+						<p class="features__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
 					</div>
 					<div class="features__element">
 						<img src="<%=require('./images/feature-6.png')%>" alt="Download for Free" class="features__ico" />
-						<p class="features__element-title">Download for Free</p>
-						<p class="features__element-description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
+						<h3 class="features__title">Download for Free</h3>
+						<p class="features__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</p>
 					</div>
 				</div>
 			</section>
@@ -74,57 +73,57 @@
 					<a class="works__element" href="#">
 						<img src="<%=require('./images/work-1.jpg')%>" alt="loremipsum.net" class="works__img" />
 						<div class="works__hover-layer">
-							<p class="works__element-title">Project Name</p>
-							<p class="works__element-subtitle">User Interface Design</p>
+							<h2 class="works__title">Project Name</h2>
+							<p class="works__subtitle">User Interface Design</p>
 						</div>
 					</a>
 					<a class="works__element" href="#">
 						<img src="<%=require('./images/work-2.jpg')%>" alt="loremipsum.net" class="works__img" />
 						<div class="works__hover-layer">
-							<p class="works__element-title">Project Name</p>
-							<p class="works__element-subtitle">User Interface Design</p>
+							<h2 class="works__title">Project Name</h2>
+							<p class="works__subtitle">User Interface Design</p>
 						</div>
 					</a>
 					<a class="works__element" href="#">
 						<img src="<%=require('./images/work-3.jpg')%>" alt="loremipsum.net" class="works__img" />
 						<div class="works__hover-layer">
-							<p class="works__element-title">Project Name</p>
-							<p class="works__element-subtitle">User Interface Design</p>
+							<h2 class="works__title">Project Name</h2>
+							<p class="works__subtitle">User Interface Design</p>
 						</div>
 					</a>
 					<a class="works__element" href="#">
 						<img src="<%=require('./images/work-4.jpg')%>" alt="loremipsum.net" class="works__img" />
 						<div class="works__hover-layer">
-							<p class="works__element-title">Project Name</p>
-							<p class="works__element-subtitle">User Interface Design</p>
+							<h2 class="works__title">Project Name</h2>
+							<p class="works__subtitle">User Interface Design</p>
 						</div>
 					</a>
 					<a class="works__element" href="#">
 						<img src="<%=require('./images/work-5.jpg')%>" alt="loremipsum.net" class="works__img" />
 						<div class="works__hover-layer">
-							<p class="works__element-title">Project Name</p>
-							<p class="works__element-subtitle">User Interface Design</p>
+							<h2 class="works__title">Project Name</h2>
+							<p class="works__subtitle">User Interface Design</p>
 						</div>
 					</a>
 					<a class="works__element" href="#">
 						<img src="<%=require('./images/work-6.jpg')%>" alt="loremipsum.net" class="works__img" />
 						<div class="works__hover-layer">
-							<p class="works__element-title">Project Name</p>
-							<p class="works__element-subtitle">User Interface Design</p>
+							<h2 class="works__title">Project Name</h2>
+							<p class="works__subtitle">User Interface Design</p>
 						</div>
 					</a>
 					<a class="works__element" href="#">
 						<img src="<%=require('./images/work-7.jpg')%>" alt="loremipsum.net" class="works__img" />
 						<div class="works__hover-layer">
-							<p class="works__element-title">Project Name</p>
-							<p class="works__element-subtitle">User Interface Design</p>
+							<h2 class="works__title">Project Name</h2>
+							<p class="works__subtitle">User Interface Design</p>
 						</div>
 					</a>
 					<a class="works__element" href="#">
 						<img src="<%=require('./images/work-8.jpg')%>" alt="loremipsum.net" class="works__img" />
 						<div class="works__hover-layer">
-							<p class="works__element-title">Project Name</p>
-							<p class="works__element-subtitle">User Interface Design</p>
+							<h2 class="works__title">Project Name</h2>
+							<p class="works__subtitle">User Interface Design</p>
 						</div>
 					</a>
 				</div>

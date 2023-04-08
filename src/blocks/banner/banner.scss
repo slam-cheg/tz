@@ -1,0 +1,18 @@
+.banner {
+	background: url("../images/first-bg.jpg");
+	background-position: top center;
+	background-size: cover;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	@media screen and (max-width: 969px) {
+		height: auto;
+		background-position: -100px;
+	}
+
+	@media screen and (max-width: 769px) {
+		height: 100vh;
+		align-items: center;
+	}
+}

@@ -1,12 +1,11 @@
 .button {
-    font-style: normal;
     font-weight: 800;
     font-size: 13px;
     line-height: 21px;
     text-transform: uppercase;
     color: #ffffff;
     padding: 18px 50px;
-    background: #e84545;
+    background: $light-red;
     border-radius: 4px;
     transition: 0.3s;
     text-decoration: none;
@@ -17,7 +16,7 @@
 	&:hover {
 		cursor: pointer;
 		transition: 0.3s;
-		background: #b34444;
+		background: $red;
 	}
 
 	@media screen and (max-width: 769px) {

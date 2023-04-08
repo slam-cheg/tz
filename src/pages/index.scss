@@ -1,9 +1,20 @@
 html {
-    scroll-behavior: smooth
+	scroll-behavior: smooth;
+}
+
+#colors {
+	$white: #ffffff !global;
+	$black: #000000 !global;
+	$dark-blue: #2b2e4a !global;
+	$light-red: #e84545 !global;
+	$red: #b34444 !global;
+    $transparent-red: #e8454590 !global;
 }
 
 @import "../vendor/normalize.scss";
 @import "../vendor/fonts/fonts.css";
+
+@import "../blocks/main/main.scss";
 
 @import "../blocks/page/page.scss";
 @import "../blocks/h1-title/h1-title.scss";
@@ -11,29 +22,31 @@ html {
 
 @import "../blocks/header/header.scss";
 @import "../blocks/header/__content/header__content.scss";
-@import "../blocks/header/__link/header__link.scss";
-@import "../blocks/header/__logo/header__logo.scss";
-@import "../blocks/header/__menu/header__menu.scss";
-@import "../blocks/header/__menu-link/header__menu-link.scss";
-@import "../blocks/header/__menu-item/header__menu-item.scss";
 
-@import "../blocks/first-block/first-block.scss";
-@import "../blocks/first-block/__content/first-block__content.scss";
-@import "../blocks/first-block/__content-wrapper/first-block__content-wrapper.scss";
-@import "../blocks/first-block/__subtitle/first-block__subtitle.scss";
-@import "../blocks/first-block/__buttons-wrapper/first-block__buttons-wrapper.scss";
+@import "../blocks/logo/logo.scss";
+@import "../blocks/logo/__img/logo__img.scss";
+
+@import "../blocks/menu/menu.scss";
+@import "../blocks/menu/__item/menu__item.scss";
+@import "../blocks/menu/__link/menu__link.scss";
+
+@import "../blocks/banner/banner.scss";
+@import "../blocks/banner/__content/banner__content.scss";
+@import "../blocks/banner/__wrapper/banner__wrapper.scss";
+@import "../blocks/banner/__subtitle/banner__subtitle.scss";
+@import "../blocks/banner/__buttons/banner__buttons.scss";
 
 @import "../blocks/features/features.scss";
 @import "../blocks/features/__content/features__content.scss";
 @import "../blocks/features/__element/features__element.scss";
 @import "../blocks/features/__ico/features__ico.scss";
-@import "../blocks/features/__element-title/features__element-title.scss";
-@import "../blocks/features/__element-description/features__element-description.scss";
+@import "../blocks/features/__title/features__title.scss";
+@import "../blocks/features/__description/features__description.scss";
 
 @import "../blocks/works/works.scss";
 @import "../blocks/works/__content/works__content.scss";
 @import "../blocks/works/__element/works__element.scss";
 @import "../blocks/works/__img/works__img.scss";
 @import "../blocks/works/__hover-layer/works__hover-layer.scss";
-@import "../blocks/works/__element-title/works__element-title.scss";
-@import "../blocks/works/__element-subtitle/works__element-subtitle.scss";
+@import "../blocks/works/__title/works__title.scss";
+@import "../blocks/works/__subtitle/works__subtitle.scss";
